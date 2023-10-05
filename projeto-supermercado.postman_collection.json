@@ -1,0 +1,299 @@
+{
+	"info": {
+		"_postman_id": "8e1cd27c-6c41-40fc-a4d0-b52230b7bbe1",
+		"name": "projeto-supermercado",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16164416"
+	},
+	"item": [
+		{
+			"name": "listarProdutos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/produtos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listarProdutosById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/produtos/64f3e083a06f267e5ec6d254",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"produtos",
+						"64f3e083a06f267e5ec6d254"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cadastrarProduto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"Feijão\",\r\n  \"precoAtual\": 9.99,\r\n  \"precoPromocao\": 9.99,\r\n  \"tipo\": \"Feijão Preto\",\r\n  \"descricao\": \"Feijão Preto\",\r\n  \"dataValidade\": \"25/12/2023\",\r\n  \"quantidade\": 30\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/produtos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "atualizarProduto",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"Feijão\",\r\n  \"precoAtual\": 7.90,\r\n  \"precoPromocao\": 7.90,\r\n  \"tipo\": \"Feijão Carioca\",\r\n  \"descricao\": \"Feijão Carioca\",\r\n  \"dataValidade\": \"25/12/2023\",\r\n  \"quantidade\": 30\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/produtos/64edd65950d073ebe87b652a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"produtos",
+						"64edd65950d073ebe87b652a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cadastrarPromocao",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"Feijão\",\r\n  \"precoPromocao\": 4.90,\r\n  \"tipo\": \"Feijão Carioca\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/produtos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "excluirProduto",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/produtos/64edd71650d073ebe87b652e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"produtos",
+						"64edd71650d073ebe87b652e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listarFuncionarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/funcionarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"funcionarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listarFuncionariosById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/funcionarios/64f348b178e2a2db1072aa51",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"funcionarios",
+						"64f348b178e2a2db1072aa51"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cadastrarFuncionarios",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"Nicole\",\r\n  \"idade\": 20,\r\n  \"matricula\": 98765,\r\n  \"cpf\": \"999.999.999-99\",\r\n  \"endereco\": \"Rua Endereco Teste, 123.\",\r\n  \"telefone\" : \"(99)9.9999-9999\",\r\n  \"senha\": \"98765\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/funcionarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"funcionarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logarFuncionario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"matricula\": 123456,\r\n  \"senha\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/funcionarios/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"funcionarios",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "atualizarFuncionario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"Ana Alice\",\r\n  \"idade\": 18,\r\n  \"matricula\": 123456,\r\n  \"cpf\": \"999.999.999-99\",\r\n  \"endereco\": \"Rua Endereco Teste, 123.\",\r\n  \"telefone\" : \"(99)9.9999-9999\",\r\n  \"senha\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/funcionarios/64f348b578e2a2db1072aa53",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"funcionarios",
+						"64f348b578e2a2db1072aa53"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "excluirFuncionario",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/funcionarios/64f348be78e2a2db1072aa57",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"funcionarios",
+						"64f348be78e2a2db1072aa57"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

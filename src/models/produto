@@ -1,0 +1,15 @@
+const mongoose = require('mongoose');
+
+const produtoSchema = new mongoose.Schema({
+    nome: String,
+    precoAtual: Number,
+    precoPromocao: Number,
+    tipo: String,
+    descricao: String,
+    dataValidade: String,
+    quantidade: Number,
+    urlImagem: String
+    
+});
+
+module.exports = mongoose.model('Produto', produtoSchema);

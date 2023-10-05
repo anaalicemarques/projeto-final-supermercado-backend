@@ -1,0 +1,11 @@
+const mongoose = require('mongoose');
+
+const funcionarioSchema = new mongoose.Schema({
+    nome: String,
+    email: String,
+    emailConfirmacao: String,
+    senha: String
+
+});
+
+module.exports = mongoose.model('Funcionario', funcionarioSchema);
